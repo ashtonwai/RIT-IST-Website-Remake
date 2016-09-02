@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IST Department at RIT</title>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.2.min.js"   integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk="   crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <!-- ScrollMagic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <!-- Custom -->
+    <script src="js/data.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/script.js"></script>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- CSS FontAwesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body style="background-color:#000000;">
+    <div id="background"></div>
+    <div id="wrapper">
+        <header id="header">
+            <div class="row">
+                <div id="rit-banner" class="col-md-6">
+                    <img src="assets/img/idbar.png" />
+                </div>
+                <div id="search-bar" class="col-md-6 text-right">
+                    <!-- search bar here -->
+                </div>
+            </div>
+        </header>
+        <div id="content">
+            <div id="main">
+                <section class="page">
+                    <div id="title" class="container">
+                        <h1>INFORMATION SCIENCES & TECHNOLOGIES @ RIT</h1>
+                    </div>
+                </section>
+                <section id="parallax1" class="parallaxParent">
+                    <div style="position:relative;">
+                        <div id="about" class="container">
+                            <div id="about-content" class="text-center">
+                                <h1 id="about-title"></h1>
+                                <hr />
+                                <p id="about-desc"></p>
+                            </div>
+                            <div id="quote-content">
+                                <p id="quote"></p>
+                                <p id="quote-author"></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" style="background-color:#FFFFFF">
+                    <div id="under-bg" class="container">
+                        <div id="undergraduate" class="text-center">
+                            <h1>Our Undergraduate Degrees</h1>
+                            <div id="under-degrees" class="row"></div>
+                        </div>
+                    </div>
+                </section>
+                <section id="parallax2" class="parallaxParent">
+                    <div style="position:relative; background-color:#FFFFFF">
+                        <div id="grad-bg" class="container">
+                            <div id="graduate" class="text-center">
+                                <h1>Our Graduate Degrees</h1>
+                                <div id="grad-degrees" class="row"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page" style="background-color:#FFFFFF">
+                    <div id="minors-bg" class="container">
+                        <div id="minors" class="text-center">
+                            <h1>Our Undergraduate Minors</h1>
+                            <div id="minors-container" class="row"></div>
+                        </div>
+                    </div>
+                </section>
+                <section id="parallax3" class="parallaxParent">
+                    <div id="employment-bg">
+                        <div id="employment" class="container">
+                            <div id="employment-content" class="text-center">
+                                <h1 id="employ-title"></h1>
+                                <div class="row">
+                                    <div id="employ-stats" class="employ-column"></div>
+                                    <div id="employ-pro" class="employ-column"></div>
+                                    <div id="employ-coop" class="employ-column"></div>
+                                    <div id="employ-company" class="employ-column"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page">
+                    <div id="maps-bg" class="container">
+                        <div id="maps">
+
+                        </div>
+                    </div>
+                </section>
+                <section id="parallax4" class="parallaxParent">
+                    <div id="people-bg" style="position:relative;">
+                        <div id="people-container" class="container">
+                            <div id="people">
+                                <div id="people-header">
+                                    <div class="people-div">
+                                        <h1 id="people-title">Our People</h1>
+                                        <h4><small id="people-sub">To view more about our faculty and staff, click below.</small></h4>
+                                    </div>
+                                    <div class="people-div">
+                                        <div id="tab-faculty" class="people-tab active text-center" role="presentation">
+                                            <a href="#people-faculty" aria-controls="people-faculty" role="tab" data-toggle="tab">
+                                                <h5>Faculty</h5>
+                                            </a>
+                                        </div>
+                                        <div id="tab-staff" class="people-tab text-center" role="presentation">
+                                            <a href="#people-staff" aria-controls="people-staff" role="tab" data-toggle="tab">
+                                                <h5>Staff</h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="people-list" class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade in active" id="people-faculty"></div>
+                                    <div role="tabpanel" class="tab-pane fade" id="people-staff"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page">
+                    <div id="research-bg" class="container">
+                        <div id="research-container" class="text-center">
+                            <div id="research">
+                                <div id="research-header" class="text-left">
+                                    <div class="research-div">
+                                        <h1>Research</h1>
+                                    </div>
+                                    <div id="tab-byInterestArea" class="research-tab active text-center" role="presentation">
+                                        <a href="#research-interest" aria-controls="research-interest" role="tab" data-toggle="tab">
+                                            <h5>By Interest Area</h5>
+                                        </a>
+                                    </div>
+                                    <div id="tab-byFaculty" class="research-tab text-center" role="presentation">
+                                        <a href="#research-faculty" aria-controls="research-faculty" role="tab" data-toggle="tab">
+                                            <h5>By Faculty</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="research-list" class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade in active" id="research-interest"></div>
+                                    <div role="tabpanel" class="tab-pane fade" id="research-faculty"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="parallax5" class="parallaxParent">
+                    <div id="resource-bg" style="position:relative;">
+                        <div id="resource-container" class="container">
+                            <div class="row" style="height:100%;">
+                                <div id="resource-column" class="col-md-7">
+                                    <div id="resource-header">
+                                        <h1 id="resource-title"></h1>
+                                        <h4><small id="resource-sub"></small></h4>
+                                    </div>
+                                    <div id="resources"></div>
+                                </div>
+                                <div id="panel-board" class="col-md-5 tab-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section style="height:100vh; background:-moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); background:-webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); background:linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);"></section>
+            </div>
+            <footer>
+                <div class="row" style="height:115px;">
+                    <div class="col-md-3">
+                        <h4 style="color:orange;">Quick Links</h4>
+                        <hr style="margin-top:0; margin-bottom:10px;" />
+                        <ul id="links"></ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 style="color:orange;">News</h4>
+                        <hr style="margin-top:0; margin-bottom:10px;" />
+                        <ul id="news"></ul>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <div id="social-icons" style="margin-top:75px;">
+                            <a id="facebook-link">
+                                <span class="fa-stack fa-2x social-icon">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a id="twitter-link">
+                                <span class="fa-stack fa-2x social-icon">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="copyright" class="col-md-12 text-right" style="height:40px;"></div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div id="pin-header" class="trigger"></div>
+    <div id="tween-header" class="trigger"></div>
+
+    <!-- Minor Modal -->
+    <div class="modal fade" id="minorModal" tabindex="-1" role="dialog" aria-labelledby="minorModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="minorModalLabel"></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-section">
+                        <h5>Description</h5>
+                        <div id="minorModalDesc"></div>
+                    </div>
+                    <div class="modal-section">
+                        <h5>Courses</h5>
+                        <div id="minorModalCourses"></div>
+                    </div>
+                    <div class="modal-section">
+                        <h5>Note</h5>
+                        <div id="minorModalNote"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Employment Model -->
+    <div class="modal fade" id="employModal" tabindex="-1" role="dialog" aria-labelledby="employModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="employModalLabel"></h4>
+                </div>
+                <div class="modal-body">
+                    <table id="employModalTable" class="table table-striped table-condensed table-hover">
+                        <!-- Table Here -->
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- People Model -->
+    <div class="modal fade" id="peopleModal" tabindex="-1" role="dialog" aria-labelledby="peopleModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="peopleModalLabel"></h4>
+                    <h4><small id="peopleModalSub"></small></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-section">
+                        <img id="peopleModalImage" />
+                    </div>
+                    <div class="modal-section">
+                        <h5>Information</h5>
+                        <div id="peopleModalInfo">
+                            <!-- Information Here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Research Model -->
+    <div class="modal fade" id="researchModal" tabindex="-1" role="dialog" aria-labelledby="researchModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="researchModalLabel"></h4>
+                </div>
+                <div class="modal-body">
+                    <ul id="researchModalDetail">
+                        <!-- Content Here -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- News Modal -->
+    <div class="modal fade" id="newsModal" tabindex="-1" role="dialog" aria-labelledby="newsModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="newsModalLabel"></h4>
+                </div>
+                <div class="modal-body">
+                    <div id="newsModalDetail">
+                        <!-- News Here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

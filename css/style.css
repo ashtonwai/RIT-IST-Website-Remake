@@ -1,0 +1,430 @@
+.modal-section {
+    margin-bottom: 20px;
+}
+/* Triggers */
+.trigger {
+    position: absolute;
+}
+#pin-header {
+    top: 50%;
+}
+#tween-header {
+    top: 75%;
+}
+/* Parallax */
+.parallaxParent {
+	height: 100vh;
+	overflow: hidden;
+}
+.parallaxParent > * {
+	height: 200%;
+	position: relative;
+	top: -100%;
+}
+/* Background */
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../assets/img/background.gif');
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    opacity: 0.5;
+}
+
+/* Header */
+#header {
+    height: 100px;
+    padding: 32.5px 20px;
+    z-index: 100;
+}
+#header > div {
+    height: 30px;
+    padding: 0 10px 0 10px;
+}
+#rit-banner, #rit-banner > img {
+    height: 100%;
+}
+
+/* Content */
+#content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.page {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+}
+.container {
+    position: absolute;
+}
+#title {
+    top: 50%;
+    width: 100%;
+    color: #FFFFFF;
+}
+#about {
+    top: 15%;
+    width: 100%;
+    height: 40%;
+    padding: 50px;
+    color: #FFFFFF;
+}
+#about-content {
+    width: 90%;
+    margin: 25px 5%;
+}
+#quote-content {
+    width: 75%;
+    height: 200px;
+    margin: 75px 12.5%;
+    padding: 20px;
+    background-color: rgba(25, 25, 25, 0.75);
+    border-radius: 15px;
+}
+#under-bg {
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/img/modern.jpg');
+    background-position: center;
+    background-size: cover;
+    opacity: 0.75;
+}
+#undergraduate {
+    height: 100%;
+    padding: 80px 0 100px 0;
+}
+.degree-box {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin: 25px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 25px;
+    transition: height 0.4s ease;
+    overflow: hidden;
+}
+.degree-box:hover {
+    height: 450px;
+}
+.degree-info {
+    height: 260px;
+}
+.degree-icon {
+    margin: 20px 0;
+}
+#grad-bg {
+    top: 15%;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/img/modern2.jpg');
+    background-size: contain;
+    opacity: 0.75;
+}
+#minors-bg {
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/img/modern3.jpg');
+    background-position: center;
+    opacity: 0.75;
+}
+#minors {
+    height: 100%;
+    padding: 80px 0 100px 0;
+}
+.minor-box {
+    display: inline-block;
+    width: 400px;
+    height: 100px;
+    margin: 10px 50px;
+    padding: 10px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 25px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.minor-box:hover {
+    transform: scale(1.1, 1.1);
+}
+.minor-icon {
+    display: inline-block;
+    margin: 5px 20px;
+}
+.minor-info {
+    display: inline-block;
+    width: 250px;
+}
+#employment-bg {
+    position: relative;
+    top: -40%;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/img/business.jpg');
+    background-size: cover;
+    opacity: 0.8;
+}
+#employment {
+    width: 100%;
+    height: 100%;
+    padding: 5% 2.5%;
+}
+.employ-column {
+    display: inline-block;
+    width: 250px;
+    height: 500px;
+    margin: 25px;
+}
+#maps-bg {
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/img/network.jpg');
+}
+#people-bg {
+    top: -40%;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/img/meeting.jpg');
+    background-position: center;
+    background-size: cover;
+}
+#people-container {
+    width: 100%;
+    height: 100%;
+}
+#people {
+    width: 100%;
+    height: 80%;
+    margin: 100px 0;
+    padding: 10px 25px;
+    color: #FFFFFF;
+}
+.people-div {
+    display: inline-block;
+}
+#people-list {
+    height: 80%;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.75);
+    overflow-y: scroll;
+}
+.people-tab {
+    display: inline-block;
+    width: 150px;
+    padding: 5px 50px;
+    background-color: rgba(50, 50, 50, 0.75);
+    cursor: pointer;
+}
+.people-tab.active {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.person {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.75);
+    background-size: cover;
+    cursor: pointer;
+}
+.person-name {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    font-size: 14px;
+    text-align: center;
+    background-color: rgba(150, 150, 150, 0.75);
+    overflow: hidden;
+    transition: height 0.4s ease;
+}
+.person-name > p {
+    margin: 5px;
+}
+.person:hover .person-name {
+    height: 30px;
+}
+#research-bg {
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/img/programming.jpg');
+    background-size: cover;
+}
+#research-container {
+    width: 100%;
+    height: 100%;
+}
+#research {
+    width: 100%;
+    height: 80%;
+    margin: 75px 0;
+    padding: 10px 25px;
+    color: #FFFFFF;
+}
+.research-tab {
+    display: inline-block;
+    width: 200px;
+    padding: 5px 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    cursor: pointer;
+}
+.research-tab.active {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+#research-list {
+    height: 80%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow-y: scroll;
+}
+.area {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 50px;
+    color: rgb(50, 50, 50);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.area:hover {
+    color: #ffa500;
+    transform: scale(1.2, 1.2);
+}
+.professor {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    padding: 40px 20px;
+    color: rgb(50, 50, 50);
+    border: 3px solid rgb(50, 50, 50);
+    background-color: #ffa500;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.professor:hover {
+    opacity: 1;
+    transform: scale(1.2, 1.2);
+}
+#resource-bg {
+    top: -40%;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/img/desk.jpg');
+    background-position: center;
+    background-size: cover;
+}
+#resource-container {
+    width: 100%;
+    height: 100%;
+}
+#resource-column {
+    width: 58.33%;
+    height: 100%;
+    padding: 50px 15px 25px 15px;
+    color: #000000;
+}
+#resource-header {
+    margin: 0 10px;
+}
+#resource-sub {
+    color: #FFFFFF;
+}
+.resource {
+    position: relative;
+    display: inline-block;
+    width: 45%;
+    height: 150px;
+    margin: 10px;
+    background-color: rgba(255,255,255,0.75);
+    cursor: pointer;
+}
+.resource-tag {
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    padding: 2.5px 10px;
+    color: orange;
+    background-color: rgba(0, 0, 0, 0.75);
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+.resource:hover .resource-tag {
+    width: 100%;
+}
+.resource.active .resource-tag {
+    width: 100%;
+    color: black;
+    background-color: rgba(255, 165, 0, 0.75);
+}
+#panel-board {
+    width: 41.65%;
+    height: 100%;
+    padding: 50px 20px;
+    color: rgb(200, 200, 200);
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow-y: scroll;
+}
+.panel-section {
+    margin-bottom: 20px;
+}
+.panel-section > h2, .panel-section > h5 {
+    color: orange;
+}
+.panel-section > strong, .panel-card > strong {
+    color: rgb(125, 125, 125);
+}
+.panel-section > img {
+    width: 100%;
+    height: 100%;
+}
+.panel-card {
+    margin: 10px;
+}
+.panel-card > p {
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    height: 200px;
+    padding: 30px 30px 15px 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-top: 2px solid #ffa500
+}
+#footer-content {
+    height: 165px;
+}
+#links, #news {
+    padding: 0;
+    list-style-type: none;
+}
+#copyright {
+    font-size: 10px;
+}
+.newsDiv {
+    margin-bottom: 20px;
+}
+.newsDiv > h4 {
+    color: orange;
+}
